@@ -1,5 +1,4 @@
-
-     <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -23,9 +22,8 @@
     }
 
     .slide img {
-      width: 300px; /* Adjust the width as needed */
+      width: 100%; /* Adjust the width as needed */
       height: auto;
-      border-radius: 50%; /* Rounded corners to make it look like a face */
     }
 
     /* Style for the animal name */
@@ -73,24 +71,15 @@
 <div class="slider-container">
   <!-- Images -->
   <div class="slide">
-    <picture>
-      <source srcset="https://via.placeholder.com/300x300?text=Cat" media="(min-width: 768px)">
-      <img src="https://via.placeholder.com/300x300?text=Cat" alt="Cat">
-    </picture>
+    <img src="https://via.placeholder.com/800x400?text=Cat" alt="Cat">
     <div class="animal-name">Cat</div>
   </div>
   <div class="slide">
-    <picture>
-      <source srcset="https://via.placeholder.com/300x300?text=Rabbit" media="(min-width: 768px)">
-      <img src="https://via.placeholder.com/300x300?text=Rabbit" alt="Rabbit">
-    </picture>
+    <img src="https://via.placeholder.com/800x400?text=Rabbit" alt="Rabbit">
     <div class="animal-name">Rabbit</div>
   </div>
   <div class="slide">
-    <picture>
-      <source srcset="https://via.placeholder.com/300x300?text=Dog" media="(min-width: 768px)">
-      <img src="https://via.placeholder.com/300x300?text=Dog" alt="Dog">
-    </picture>
+    <img src="https://via.placeholder.com/800x400?text=Dog" alt="Dog">
     <div class="animal-name">Dog</div>
   </div>
 
@@ -125,3 +114,4 @@
 
 </body>
 </html>
+     
