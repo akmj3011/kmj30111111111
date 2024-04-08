@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+   <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -22,21 +23,8 @@
     }
 
     .slide img {
-      width: 100%; /* Adjust the width as needed */
-      height: auto;
-    }
-
-    /* Style for the animal name */
-    .animal-name {
-      position: absolute;
-      bottom: 10px;
-      left: 0;
       width: 100%;
-      text-align: center;
-      color: white;
-      font-size: 18px;
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 5px;
+      height: auto;
     }
 
     /* Style for the navigation arrows */
@@ -71,16 +59,16 @@
 <div class="slider-container">
   <!-- Images -->
   <div class="slide">
+    <img src="https://via.placeholder.com/800x400?text=Dog" alt="Dog">
+  </div>
+  <div class="slide">
     <img src="https://via.placeholder.com/800x400?text=Cat" alt="Cat">
-    <div class="animal-name">Cat</div>
   </div>
   <div class="slide">
     <img src="https://via.placeholder.com/800x400?text=Rabbit" alt="Rabbit">
-    <div class="animal-name">Rabbit</div>
   </div>
   <div class="slide">
-    <img src="https://via.placeholder.com/800x400?text=Dog" alt="Dog">
-    <div class="animal-name">Dog</div>
+    <img src="https://via.placeholder.com/800x400?text=Tiger" alt="Tiger">
   </div>
 
   <!-- Navigation arrows -->
@@ -89,8 +77,8 @@
 </div>
 
 <script>
-  let slideIndex = 1;
-  showSlides(slideIndex);
+  let slideIndex = 0;
+  showSlides();
 
   function plusSlides(n) {
     showSlides(slideIndex += n);
@@ -100,18 +88,19 @@
     showSlides(slideIndex = n);
   }
 
-  function showSlides(n) {
+  function showSlides() {
     let i;
     const slides = document.getElementsByClassName("slide");
-    if (n > slides.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";  
     }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
     slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
   }
 </script>
 
 </body>
 </html>
-     
+  
