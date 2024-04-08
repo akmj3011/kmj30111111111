@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+     <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -72,15 +73,24 @@
 <div class="slider-container">
   <!-- Images -->
   <div class="slide">
-    <img src="https://via.placeholder.com/300x300?text=Cat" alt="Cat">
+    <picture>
+      <source srcset="https://via.placeholder.com/300x300?text=Cat" media="(min-width: 768px)">
+      <img src="https://via.placeholder.com/300x300?text=Cat" alt="Cat">
+    </picture>
     <div class="animal-name">Cat</div>
   </div>
   <div class="slide">
-    <img src="https://via.placeholder.com/300x300?text=Rabbit" alt="Rabbit">
+    <picture>
+      <source srcset="https://via.placeholder.com/300x300?text=Rabbit" media="(min-width: 768px)">
+      <img src="https://via.placeholder.com/300x300?text=Rabbit" alt="Rabbit">
+    </picture>
     <div class="animal-name">Rabbit</div>
   </div>
   <div class="slide">
-    <img src="https://via.placeholder.com/300x300?text=Dog" alt="Dog">
+    <picture>
+      <source srcset="https://via.placeholder.com/300x300?text=Dog" media="(min-width: 768px)">
+      <img src="https://via.placeholder.com/300x300?text=Dog" alt="Dog">
+    </picture>
     <div class="animal-name">Dog</div>
   </div>
 
